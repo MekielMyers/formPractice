@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form-Questions</title>
+    <style>
+        #leg{
+            background-color: black;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <label for="food">Choose a Flavor</label>
+    <input list="foods" name="food5" id="food5">
+    <datalist id="foods">
+        <option value="Chocolate">
+        <option value="Mint">
+        <option value="Coconut">
+        <option value="Strawberry">
+        <option value="Vanilla">
+    </datalist>
+    <br>
+    <br>
+    <br>
+    <!-- Select input element presents options for the users from which they need to select one of them. On the otherhand, Datalist presents a list of suggested values to the associated input form (text) field and users are free to select one of those suggested values or type in their own value.-->
+    <form>
+        <fieldset>
+            <legend id="leg">Choose your favorite monster</legend>
+            <label>Kraken</label>
+            <input type="radio" id="Kraken" name="hi"><br>
+            <label>Sasquatch</label>
+            <input type="radio" id="Sasquatch" name="hi"><br>
+            <label>Mothman</label>
+            <input type="radio" id="Mothman" name="hi">
+        </fieldset>
+    </form>
+    <br>
+    <br>
+    <br>
+    <form>
+        <fieldset>
+            <legend id="leg">Choose your favorite color</legend>
+            <label>Blue</label>
+            <input type="radio" id="blue" name="hello"><br>
+            <label>Green</label>
+            <input type="radio" id="green" name="hello"><br>
+            <label>Pink</label>
+            <input type="radio" id="pink" name="hello"><br>
+            <label>Red</label>
+            <input type="radio" id="red" name="hello"><br>
+            <label>Yellow</label>
+            <input type="radio" id="yellow" name="hello"><br>
+        </fieldset>
+        <fieldset>
+            <legend id="leg">Choose your favorite monster</legend>
+            <label>Kraken</label>
+            <input type="radio" id="Kraken" name="hi"><br>
+            <label>Sasquatch</label>
+            <input type="radio" id="Sasquatch" name="hi"><br>
+            <label>Mothman</label>
+            <input type="radio" id="Mothman" name="hi">
+        </fieldset>
+    </form>
+    <!-- The fieldset element is used to group related form controls and their labels within a web form.-->
+    <!--A fieldset would be used to separate the following groups-->
+    <!--Add a class to the fieldset-->
+    <br>
+    <br>
+    <label>Temperature:</label>
+    <h3>0<meter id="tempmet" min="0" max="120" optimum="75" high="91" low="50" value="110"></meter>120</h3>
+    <h3>0<meter id="tempmet2" min="0" max="120" optimum="75" high="91" low="50" value="30"></meter>120</h3>
+    <h3>0<meter id="tempmet3" min="0" max="120" optimum="75" high="91" low="50" value="75"></meter>120</h3>
+    <!--6 main attributes: high, low, min, max, optimum, value-->
+    <form oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+        0 <input type="range" id="a" value="50">100 
+        +<input type="number" id="b" value="10">
+        =<output name="x" for="a b"></output>
+    </form>
+    <form oninput="y.value=parseInt(m.value)*parseInt(n.value)">
+        0 <input type="range" id="m" value="50">100 
+        +<input type="number" id="n" value="10">
+        =<output name="y" for="m n"></output>
+    </form>
+</body>
+</html>
